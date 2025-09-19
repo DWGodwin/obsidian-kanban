@@ -111,7 +111,7 @@ export function constructMenuDatePickerOnChange({
     const formattedDate = moment(date).format(dateFormat);
     const wrappedDate = shouldLinkDates
       ? buildLinkToDailyNote(stateManager.app, formattedDate)
-      : `{${formattedDate}}`;
+      : `${formattedDate}`;
 
     let titleRaw = item.data.titleRaw;
 
