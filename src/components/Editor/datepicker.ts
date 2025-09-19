@@ -14,7 +14,7 @@ export function applyDate(ctx: EditorSuggestContext, stateManager: StateManager,
   const formattedDate = moment(date).format(dateFormat);
   const wrappedDate = shouldLinkDates
     ? buildLinkToDailyNote(stateManager.app, formattedDate)
-    : `{${formattedDate}} `;
+    : `${formattedDate}`;
 
   const start = { line: ctx.start.line, ch: ctx.start.ch + dateTrigger.length };
 
